@@ -1,0 +1,6 @@
+{
+  "name": "Noor Quest",
+  "description": "Çocuk odaklı manevi ve dini eğitim için etkileşimli ders planlayıcı ve öğrenci ödev takip programı.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

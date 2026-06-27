@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Amiri:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Quicksand", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Noto Serif", Georgia, serif;
+  --font-arabic: "Amiri", "Noto Serif", serif;
+
+  --color-primary-green: #2D9171;
+  --color-primary-green-dark: #1F6A52;
+  --color-primary-green-light: #E9F6F1;
+  --color-accent-gold: #D9A441;
+  --color-accent-gold-light: #FDF7EC;
+  --color-accent-blue: #76B6E4;
+  --color-accent-blue-light: #EFF7FD;
+  --color-neutral-bg: #F9FBF9;
+  --color-neutral-dark: #191C1B;
+  --color-neutral-muted: #6E7A73;
+  --color-neutral-card: #FFFFFF;
+}
+
+/* Custom styles for tactile buttons and animations */
+.tactile-btn {
+  @apply relative active:translate-y-1 transition-all duration-100;
+  box-shadow: 0 4px 0 var(--color-primary-green-dark);
+}
+.tactile-btn:active {
+  box-shadow: 0 0px 0 var(--color-primary-green-dark);
+}
+
+.tactile-btn-gold {
+  @apply relative active:translate-y-1 transition-all duration-100;
+  box-shadow: 0 4px 0 #b0812b;
+}
+.tactile-btn-gold:active {
+  box-shadow: 0 0px 0 #b0812b;
+}
+
+/* Scrollbar styles for modern clean look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #bdc9c2;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a1b1a8;
+}
+
